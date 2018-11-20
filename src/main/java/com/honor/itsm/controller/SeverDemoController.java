@@ -4,18 +4,16 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 @Api
 @RestController
 @RequestMapping("/project")
 public class SeverDemoController {
     @ApiOperation("仅仅是测试swagger")
     @ResponseBody
-    @PostMapping("/notice")
-    private String getJson(String id ,int age){
+    @RequestMapping("/notice")
+    private String getJson(String id ,Integer  age){
         JSONObject jsonObject=new JSONObject();
         jsonObject.put("id","xxx1");
         jsonObject.put("title","Alipay");

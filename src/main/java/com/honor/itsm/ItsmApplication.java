@@ -1,10 +1,14 @@
 package com.honor.itsm;
 
+import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.Configuration;
 
+@Configuration
+@EnableApolloConfig
 @SpringBootApplication
 public class ItsmApplication extends SpringBootServletInitializer {
     /**
