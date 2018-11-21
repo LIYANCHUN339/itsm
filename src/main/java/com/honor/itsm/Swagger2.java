@@ -18,7 +18,7 @@ public class Swagger2 {
                 .apiInfo(apiInfo())
                 .select()
 
-                .apis(RequestHandlerSelectors.basePackage("com.honor.itsm.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.honor.itsm.basic"))
                 .paths(PathSelectors.any())
                 .build();
     }
